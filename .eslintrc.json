@@ -1,0 +1,21 @@
+{
+  "extends": "next/core-web-vitals",
+
+  "rules": {
+    "react/no-unknown-property": [
+      2,
+      {
+        "ignore": ["jsx", "global"]
+        // style error 방지용
+      }
+    ],
+    "jsx-a11y/anchor-is-valid": [
+      "error",
+      {
+        "components": ["Link"],
+        "specialLink": ["hrefLeft", "hrefRight"],
+        "aspects": ["invalidHref", "preferButton"]
+      }
+    ]
+  }
+}
